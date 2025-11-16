@@ -1,5 +1,41 @@
-local Library = {}
-local SharpUI = {}
+local Library = {
+Black = Color3.new()
+White = Color3.new(1,1,1)
+Grey = Color3.fromRGB(22,22,22)
+}
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local UserInputService = game:GetService("UserInputService")
+
+function Library:CreateWindow(title, subtitle, icontoggle)
+local UI = setmetatable({}, Library)
+UI.ScreenGui = Instance.new("ScreenGui", game:GetService("CoreGui"))
+UI.ScreenGui.Name = "UI_Library"
+UI.MainFrame = Instance.new("Frame", UI.ScreenGui)
+UI.MainFrame.Size = UDim2.new(0.55, 0, 0.35, 0)
+UI.MainFrame.Position = UDim2.new(0.5, -275, 0.5, -175)
+UI.MainFrame.BackgroundColor3 = Library.Black
+UI.MainFrame.BorderColor3 = Library.Grey
+UI.MainFrame.BorderSizePixel = 2
+UI.MainFrame.Active = true
+UI.Draggable = true
+UI.Title = Instance.new("TextLabel", MainFrame)
+UI.Title.Size = UDim2.new(1,0,0,45)
+UI.Title.BackgroundColor3 = Library.Black
+UI.Title.BorderColor3 = Library.Grey
+UI.Title.
+
+
+
+
+
+
+
+
+
+
+--[[local SharpUI = {}
 SharpUI.__index = SharpUI
 
 local Players = game:GetService("Players")
@@ -409,7 +445,7 @@ function SharpUI:AddImage(tab, defaultId)
 end
 
 return SharpUI
-
+]]--
 
 
 
